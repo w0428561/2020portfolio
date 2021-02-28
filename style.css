@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  text-decoration: none;
+}
+body {
+  flex-direction: column;
+  background-color: #f7f7f7;
+
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+h5 {
+  font-size: 130px;
+  letter-spacing: 3px;
+  color: #525050;
+  font-family: "Lora", serif;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #f7f7f7;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  text-decoration: none;
+}
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 40px;
+  color: rgb(94, 91, 91);
+}
+
+.nav-links a:hover {
+  font-weight: 500;
+  font-size: 45px;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  padding: 9px;
+  border-radius: 40px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.burger:hover {
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.burger div {
+  width: 15px;
+  height: 2px;
+  background-color: rgb(95, 92, 92);
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+.container {
+  width: 95%;
+  padding-left: 4%;
+
+}
+
+/*first*/
+.first-container p {
+  font-family: "Lora", serif;
+  font-size: 3.5em;
+  font-weight: 300;
+  padding:  0;
+  margin-left: 8%;
+  margin-bottom: 20px;
+  line-height: 45px;
+  letter-spacing: 1px;
+  color: #525050;
+}
+.first-container p span {
+  font-weight: 300;
+  font-size: 70px;
+  font-family: 'Permanent Marker', cursive;
+}
+.story p {
+  padding: 5%;
+  font-size: 3em;
+  font-weight: 200;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: rgb(105, 102, 102);
+}
+.story p span {
+  color: rgb(78, 77, 74);
+  font-family: 'Permanent Marker', cursive;
+}
+
+/*middle*/
+
+.item-b .lslide {
+  height: 500px;
+}
+.middle-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: center;
+  margin-bottom: 5%;
+}
+.middle-container ul {
+  margin-bottom: 5%;
+}
+.middle-container .card {
+  width: 320px;
+  height: 440px;
+  padding: 15px 10px;
+  border-radius: 40px;
+  margin: 10px;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 1),
+    6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.middle-container .card:hover {
+  box-shadow: inset -6px -6px 20px rgba(255, 255, 255, 0.5),
+    inset 6px 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 3s ease;
+}
+.middle-container .card .imgBx {
+  position: relative;
+  text-align: center;
+}
+.middle-container .card .imgBx img {
+  max-width: 290px;
+  height: 230px;
+  border-radius: 40px;
+  opacity: 80%;
+  filter: brightness(40%);
+}
+.middle-container .card .imgBx img:hover {
+  filter: brightness(80%);
+}
+.middle-container .card .contentBx {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+.middle-container .card .contentBx h4 {
+  text-transform: uppercase;
+  color: #363636;
+  font-weight: 500;
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+.middle-container .card .contentBx p {
+  color: #a09e96;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin: 2%;
+}
+.middle-container .card .contentBx a {
+  position: relative;
+
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 0.8em;
+  color: #bebbbb;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+    4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.middle-container .card .contentBx a:hover {
+  box-shadow: inset -4px -4px 15px rgba(255, 255, 255, 1),
+    inset 4px 4px 15px rgba(0, 0, 0, 0.2);
+  color: rgb(233, 198, 41);
+}
+/*bottom*/
+
+.bottom-container {
+  
+  text-align:center;
+  display:inline;
+  margin: 10% 8%;
+  padding: 5% 0;
+}
+
+.links, .bottom-container p {
+  display:inline;
+
+}
+
+.bottom-container img {
+  width: 20px;
+  height: 20px;
+  line-height: calc(60px - 6px);
+  color: #645f5f;
+}
+.bottom-container a {
+  margin: 9px;
+  border-radius: 50%;
+  padding: 12px 16px;
+  text-decoration: none;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.4);
+  transition: 1s;
+}
+.bottom-container a:hover {
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+i.fa.fa-facebook::before {
+  color: #676768;
+}
+i.fa.fa-instagram::before {
+  color: #676768;
+}
+i.fa.fa-linkedin::before {
+  color: #676768;
+}
+i.fa.fa-google::before {
+  color: #676768;
+}
+
+.bottom-container .message {
+  margin-bottom: 30px;
+  color: #3d3a3a;
+}
+.bottom-container p {
+  
+  position: absolute;
+  text-align: right;
+  right: 5%;
+  font-size: 1.2em;
+  color: #525050;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 90px;
+  }
+  h5 {
+    font-size: 80px;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    top: 0vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 1000;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links a {
+    font-size: 40px;
+    color: rgb(94, 91, 91);
+  }
+  .burger {
+    display: block;
+    z-index: 1000;
+  }
+  .first-container p {
+    font-family: "Lora", serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .first-container p span {
+    font-size: 30px;
+  }
+  .story p {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: rgb(105, 102, 102);
+    margin-top: 5%;
+  }
+  .container {
+    padding: 30px 10px;
+  }
+  .middle-container {
+    align-items: center;
+    font-size: 0.7em;
+  }
+  .middle-container .card {
+    width: 270px;
+    height: 340px;
+    margin-bottom: 30px;
+    margin-left: 31px;
+  }
+  .middle-container .card .contentBx h4 {
+    font-size: 1.2em;
+  }
+  .middle-container .card .contentBx p {
+    font-size: 0.9em;
+    line-height: 13px;
+  }
+  .middle-container .card .imgBx img {
+    width: 220px;
+    height: 170px;
+    border-radius: 30px;
+    opacity: 80%;
+  }
+  .bottom-container {
+   margin-top: 20%;
+    width: 80%;
+
+  }
+  .bottom-container {
+    align-items: flex-start;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .bottom-container a {
+    margin: 3px;
+    border-radius: 50%;
+    padding: 10px 12px;}
+  .bottom-container p {
+    font-size: 0.8em;
+
+  }
+    
+}
+@media screen and (max-width: 320px) {
+  h5 {
+    font-size: 60px;
+  }
+  .middle-container .card {
+    width: 240px;
+    height: 320px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+  .middle-container .card .contentBx h4 {
+    font-size: 1.2em;
+  }
+  .middle-container .card .contentBx p {
+    font-size: 0.9em;
+    line-height: 13px;
+  }
+  .middle-container .card .imgBx img {
+    width: 200px;
+    height: 150px;
+    border-radius: 30px;
+    opacity: 80%;
+  }
+  .bottom-container {
+   margin-top: 20%;
+    width: 80%;
+
+  }
+  .bottom-container {
+    align-items: flex-start;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .bottom-container a {
+    margin: 3px;
+    display: absolute;
+  text-align: center;
+  }
+  .bottom-container p {
+    font-size: 0.6em;
+    margin-bottom: 10%;
+
+  }
+  .bottom-container a {
+    margin: 3px;
+    border-radius: 50%;
+    padding: 10px 12px;}
+   
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle {
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
